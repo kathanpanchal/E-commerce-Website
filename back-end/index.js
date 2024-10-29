@@ -173,7 +173,7 @@ app.post('/login',async(req,res)=>{
 const fetchUser = async(req,res,next)=>{
     const token = req.header('auth-token')
     if(!token){
-        console.log("fuck off");
+        console.log("ERROR");
         res.status(401).send({error:"pls authenticate"})
     }else{
         try {
